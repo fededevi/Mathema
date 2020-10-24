@@ -1,10 +1,9 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 
-Window {
+Item {
     id: w
     visible: true
-    visibility: "FullScreen"
 
     property int five_spacing: 50
     property int s : (w.width-five_spacing) * 0.09;

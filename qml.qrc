@@ -6,5 +6,6 @@
         <file>10F.qml</file>
         <file>tasti.qml</file>
         <file>sfondo.png</file>
+        <file>10S.qml</file>
     </qresource>
 </RCC>
