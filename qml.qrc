@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>10.qml</file>
+        <file>20.qml</file>
+        <file>10F.qml</file>
+        <file>tasti.qml</file>
+        <file>sfondo.png</file>
+    </qresource>
+</RCC>
