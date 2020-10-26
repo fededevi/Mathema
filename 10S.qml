@@ -28,7 +28,7 @@ Item {
         focus: true
 
         Keys.onPressed: {
-            if (event.key === Qt.Key_Space) {
+            if (event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 num1 = 1 + Math.random() * 5
                 num2 = num1 + 1 + Math.random() * 5
             }
