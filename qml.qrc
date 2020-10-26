@@ -4,8 +4,10 @@
         <file>10.qml</file>
         <file>20.qml</file>
         <file>10F.qml</file>
-        <file>tasti.qml</file>
+        <file>keys.qml</file>
         <file>sfondo.png</file>
         <file>10S.qml</file>
+        <file>BortKey.qml</file>
+        <file>BortKeys.qml</file>
     </qresource>
 </RCC>

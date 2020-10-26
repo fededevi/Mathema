@@ -5,7 +5,7 @@ import QtQuick 2.15
 Window {
     id: w
     visible: true
-    visibility: "FullScreen"
+    visibility: "Maximized"
 
     property int five_spacing: 50
     property int s : (w.width-five_spacing) * 0.09;
@@ -97,7 +97,7 @@ Window {
             Rectangle {
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: loader.source = "tasti.qml"
+                    onClicked: loader.source = "keys.qml"
                 }
                 anchors.verticalCenter: parent.verticalCenter
                 width: s
