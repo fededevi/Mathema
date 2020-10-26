@@ -12,6 +12,11 @@ Item {
     anchors.verticalCenter: parent.verticalCenter
     height:  size*3
 
+    onLowChanged:{
+        low ? a2.start() : a1.start()
+    }
+
+
     Rectangle {
         id: rect
         anchors.bottomMargin: - base.width*2
@@ -23,7 +28,6 @@ Item {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                low ? a1.start() : a2.start()
                 low = !low
             }
         }

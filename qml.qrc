@@ -9,5 +9,6 @@
         <file>10S.qml</file>
         <file>BortKey.qml</file>
         <file>BortKeys.qml</file>
+        <file>korn.qml</file>
     </qresource>
 </RCC>
