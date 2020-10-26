@@ -10,7 +10,7 @@ Item {
     property color color: "#000000"
 
     anchors.verticalCenter: parent.verticalCenter
-    height: low ? size : size*3
+    height:  size*3
 
     Rectangle {
         id: rect
@@ -18,12 +18,18 @@ Item {
         anchors.bottom: parent.verticalCenter
 
         width: base.width
-        height: low ? base.width : base.width*3
+        height: base.width
 
         MouseArea {
             anchors.fill: parent
-            onClicked: low = !low
+            onClicked: {
+                low ? a1.start() : a2.start()
+                low = !low
+            }
         }
+
+        PropertyAnimation { id:a1; target: rect; property: "height"; easing.type: Easing.InOutQuad; to: width*3 }
+        PropertyAnimation { id:a2; target: rect; property: "height"; easing.type: Easing.InOutQuad; to: width }
 
         border.color: "#000000"
         border.width: 2

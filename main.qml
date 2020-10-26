@@ -5,7 +5,7 @@ import QtQuick 2.15
 Window {
     id: w
     visible: true
-    visibility: "Maximized"
+    visibility: "FullScreen"
 
     property int five_spacing: 50
     property int s : (w.width-five_spacing) * 0.09;
@@ -31,7 +31,9 @@ Window {
         Keys.onPressed: {
             if (event.key === Qt.Key_Escape) {
                 loader.source = ""
+                img.source = ""
             }
+
         }
 
         Row {

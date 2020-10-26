@@ -11,6 +11,7 @@ Row {
     property color col1: "#DD2222";
     property color col2: "#22DD22";
     property bool number_visible : false
+    property int number_mode : 0
 
 
     function allUp() {
@@ -38,7 +39,11 @@ Row {
         BortKey {
             color: col1
             width: size
-            number: index
+            number: {
+                if      (number_mode == 0) index + 0
+                else if (number_mode == 1) index + 0
+                else if (number_mode == 2) index + 0
+            }
             number_visible: base.number_visible
         }
     }
@@ -55,7 +60,11 @@ Row {
         BortKey {
             color: col1
             width: size
-            number: index+5
+            number: {
+                if      (number_mode == 0) index + 5
+                else if (number_mode == 1) index + 5
+                else if (number_mode == 2) index + 0
+            }
             number_visible: base.number_visible
         }
     }
@@ -72,7 +81,11 @@ Row {
         BortKey {
             color: col2
             width: size
-            number: index+10
+            number:  {
+                if      (number_mode == 0) index + 10
+                else if (number_mode == 1) index + 0
+                else if (number_mode == 2) index + 0
+            }
             number_visible: base.number_visible
         }
     }
@@ -89,7 +102,11 @@ Row {
         BortKey {
             color: col2
             width: size
-            number: index+15
+            number: {
+                if      (number_mode == 0) index + 15
+                else if (number_mode == 1) index + 5
+                else if (number_mode == 2) index + 0
+            }
             number_visible: base.number_visible
         }
     }

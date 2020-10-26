@@ -38,6 +38,15 @@ Item {
             if (event.key === Qt.Key_F1) {
                 bk.number_visible = !bk.number_visible
             }
+            if (event.key === Qt.Key_F2) {
+                bk.number_mode = 0
+            }
+            if (event.key === Qt.Key_F3) {
+                bk.number_mode = 1
+            }
+            if (event.key === Qt.Key_F4) {
+                bk.number_mode = 2
+            }
         }
 
         BortKeys{
