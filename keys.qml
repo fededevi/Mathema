@@ -35,11 +35,15 @@ Item {
             if (event.key === Qt.Key_Down) {
                 bk.allDown()
             }
+            if (event.key === Qt.Key_F1) {
+                bk.number_visible = !bk.number_visible
+            }
         }
 
         BortKeys{
             id:bk
             anchors.fill: parent
+            number_visible: false
         }
 
     }

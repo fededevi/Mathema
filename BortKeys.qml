@@ -3,12 +3,14 @@ import QtQuick.Window 2.12
 
 
 Row {
+    id:base
     property int spacing5: 50
     anchors.leftMargin: 50
     spacing: 15
     property int size : (width - spacing5*3 -anchors.leftMargin - spacing * 22) / 20
     property color col1: "#DD2222";
     property color col2: "#22DD22";
+    property bool number_visible : false
 
 
     function allUp() {
@@ -36,6 +38,8 @@ Row {
         BortKey {
             color: col1
             width: size
+            number: index
+            number_visible: base.number_visible
         }
     }
 
@@ -51,6 +55,8 @@ Row {
         BortKey {
             color: col1
             width: size
+            number: index+5
+            number_visible: base.number_visible
         }
     }
 
@@ -66,6 +72,8 @@ Row {
         BortKey {
             color: col2
             width: size
+            number: index+10
+            number_visible: base.number_visible
         }
     }
 
@@ -81,6 +89,8 @@ Row {
         BortKey {
             color: col2
             width: size
+            number: index+15
+            number_visible: base.number_visible
         }
     }
 
